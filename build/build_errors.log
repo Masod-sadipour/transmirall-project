@@ -1,0 +1,154 @@
+In file included from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/threads.h:104,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/reference_counter.h:25,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/reference_counted_object.h:24,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/parameters.h:25,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/equation_systems.h:25,
+                 from /nas/longleaf/home/masods/transmirall/src/Poisson.hpp:12,
+                 from /nas/longleaf/home/masods/transmirall/src/Poisson.cpp:7:
+/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/threads_pthread.h:322: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for schedule (static)
+ 
+/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/threads_pthread.h:433: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for schedule (static)
+ 
+In file included from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/threads.h:104,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/getpot.h:69,
+                 from /nas/longleaf/home/masods/transmirall/BoundaryConditions/BCHandler.hpp:6,
+                 from /nas/longleaf/home/masods/transmirall/BoundaryConditions/BCs.cpp:1:
+/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/threads_pthread.h:322: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for schedule (static)
+ 
+/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/threads_pthread.h:433: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for schedule (static)
+ 
+In file included from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/threads.h:104,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/reference_counter.h:25,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/reference_counted_object.h:24,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/dof_object.h:29,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/mesh_base.h:24,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/unstructured_mesh.h:24,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/replicated_mesh.h:24,
+                 from /nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/mesh.h:30,
+                 from /nas/longleaf/home/masods/transmirall/src/main.cpp:3:
+/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/threads_pthread.h:322: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for schedule (static)
+ 
+/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/threads_pthread.h:433: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for schedule (static)
+ 
+In file included from /nas/longleaf/home/masods/transmirall/BoundaryConditions/BCs.cpp:1:
+/nas/longleaf/home/masods/transmirall/BoundaryConditions/BCHandler.hpp:25:32: error: ‘GetPot’ in namespace ‘libMesh’ does not name a type
+     void readBC(const libMesh::GetPot& data, const std::string& section);
+                                ^~~~~~
+/nas/longleaf/home/masods/transmirall/BoundaryConditions/BCs.cpp:4:6: error: no declaration matches ‘void BCHandler::readBC(const GetPot&, const string&)’
+ void BCHandler::readBC(const GetPot& data, const std::string& section) {
+      ^~~~~~~~~
+In file included from /nas/longleaf/home/masods/transmirall/BoundaryConditions/BCs.cpp:1:
+/nas/longleaf/home/masods/transmirall/BoundaryConditions/BCHandler.hpp:25:10: note: candidate is: ‘void BCHandler::readBC(const int&, const string&)’
+     void readBC(const libMesh::GetPot& data, const std::string& section);
+          ^~~~~~
+/nas/longleaf/home/masods/transmirall/BoundaryConditions/BCHandler.hpp:22:7: note: ‘class BCHandler’ defined here
+ class BCHandler {
+       ^~~~~~~~~
+make[2]: *** [CMakeFiles/transmural_solver.dir/build.make:79: CMakeFiles/transmural_solver.dir/BoundaryConditions/BCs.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+In file included from /nas/longleaf/home/masods/transmirall/src/Poisson.hpp:18,
+                 from /nas/longleaf/home/masods/transmirall/src/Poisson.cpp:7:
+/nas/longleaf/home/masods/transmirall/BoundaryConditions/BCHandler.hpp:25:32: error: ‘GetPot’ in namespace ‘libMesh’ does not name a type
+     void readBC(const libMesh::GetPot& data, const std::string& section);
+                                ^~~~~~
+In file included from /nas/longleaf/home/masods/transmirall/src/Poisson.hpp:18,
+                 from /nas/longleaf/home/masods/transmirall/src/main.cpp:7:
+/nas/longleaf/home/masods/transmirall/BoundaryConditions/BCHandler.hpp:25:32: error: ‘GetPot’ in namespace ‘libMesh’ does not name a type
+     void readBC(const libMesh::GetPot& data, const std::string& section);
+                                ^~~~~~
+In file included from /nas/longleaf/home/masods/transmirall/src/Poisson.cpp:7:
+/nas/longleaf/home/masods/transmirall/src/Poisson.hpp:51:31: error: ‘GetPot’ in namespace ‘libMesh’ does not name a type
+     void setup(const libMesh::GetPot& data, std::string section = "poisson");
+                               ^~~~~~
+/nas/longleaf/home/masods/transmirall/src/Poisson.hpp:69:15: error: field ‘M_bch’ has incomplete type ‘BeatIt::BCHandler’
+     BCHandler M_bch;
+               ^~~~~
+/nas/longleaf/home/masods/transmirall/src/Poisson.hpp:41:7: note: forward declaration of ‘class BeatIt::BCHandler’
+ class BCHandler;
+       ^~~~~~~~~
+/nas/longleaf/home/masods/transmirall/src/Poisson.hpp:84:14: error: ‘GetPot’ in namespace ‘libMesh’ does not name a type
+     libMesh::GetPot M_datafile;
+              ^~~~~~
+In file included from /nas/longleaf/home/masods/transmirall/src/main.cpp:7:
+/nas/longleaf/home/masods/transmirall/src/Poisson.hpp:51:31: error: ‘GetPot’ in namespace ‘libMesh’ does not name a type
+     void setup(const libMesh::GetPot& data, std::string section = "poisson");
+                               ^~~~~~
+/nas/longleaf/home/masods/transmirall/src/Poisson.hpp:69:15: error: field ‘M_bch’ has incomplete type ‘BeatIt::BCHandler’
+     BCHandler M_bch;
+               ^~~~~
+/nas/longleaf/home/masods/transmirall/src/Poisson.hpp:41:7: note: forward declaration of ‘class BeatIt::BCHandler’
+ class BCHandler;
+       ^~~~~~~~~
+/nas/longleaf/home/masods/transmirall/src/Poisson.hpp:84:14: error: ‘GetPot’ in namespace ‘libMesh’ does not name a type
+     libMesh::GetPot M_datafile;
+              ^~~~~~
+/nas/longleaf/home/masods/transmirall/src/main.cpp: In function ‘int main(int, char**)’:
+/nas/longleaf/home/masods/transmirall/src/main.cpp:41:14: error: ‘GetPot’ is not a member of ‘libMesh’
+     libMesh::GetPot data("input/config.in");
+              ^~~~~~
+/nas/longleaf/home/masods/transmirall/src/main.cpp:41:14: note: suggested alternative:
+In file included from /nas/longleaf/home/masods/transmirall/src/main.cpp:6:
+/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include/libmesh/getpot.h:153:7: note:   ‘GetPot’
+ class GetPot
+       ^~~~~~
+/nas/longleaf/home/masods/transmirall/src/main.cpp:45:26: error: ‘data’ was not declared in this scope
+     poisson_solver.setup(data);
+                          ^~~~
+/nas/longleaf/home/masods/transmirall/src/main.cpp:45:26: note: suggested alternatives:
+In file included from /usr/include/c++/8/string:51,
+                 from /usr/include/c++/8/bits/locale_classes.h:40,
+                 from /usr/include/c++/8/bits/ios_base.h:41,
+                 from /usr/include/c++/8/ios:42,
+                 from /usr/include/c++/8/ostream:38,
+                 from /usr/include/c++/8/iostream:39,
+                 from /nas/longleaf/home/masods/transmirall/src/main.cpp:1:
+/usr/include/c++/8/bits/range_access.h:318:5: note:   ‘std::data’
+     data(initializer_list<_Tp> __il) noexcept
+     ^~~~
+In file included from /usr/include/boost/proto/transform/when.hpp:25,
+                 from /usr/include/boost/proto/matches.hpp:43,
+                 from /usr/include/boost/proto/core.hpp:22,
+                 from /usr/include/boost/proto/proto.hpp:12,
+                 from /usr/include/boost/spirit/home/support/meta_compiler.hpp:19,
+                 from /usr/include/boost/spirit/home/qi/meta_compiler.hpp:14,
+                 from /usr/include/boost/spirit/home/qi/action/action.hpp:14,
+                 from /usr/include/boost/spirit/home/qi/action.hpp:14,
+                 from /usr/include/boost/spirit/home/qi.hpp:14,
+                 from /usr/include/boost/spirit/include/qi.hpp:16,
+                 from /nas/longleaf/home/masods/transmirall//Util/Grammar.hpp:35,
+                 from /nas/longleaf/home/masods/transmirall/Util/SpiritFunction.hpp:53,
+                 from /nas/longleaf/home/masods/transmirall/src/Poisson.hpp:19,
+                 from /nas/longleaf/home/masods/transmirall/src/main.cpp:7:
+/usr/include/boost/proto/transform/env.hpp:164:13: note:   ‘boost::proto::envns_::data’
+             BOOST_PROTO_DEFINE_ENV_VAR(data_type, data);
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/boost/proto/transform/env.hpp:164:13: note:   ‘boost::proto::envns_::data’
+make[2]: *** [CMakeFiles/transmural_solver.dir/build.make:93: CMakeFiles/transmural_solver.dir/src/main.cpp.o] Error 1
+/nas/longleaf/home/masods/transmirall/src/Poisson.cpp: In constructor ‘BeatIt::Poisson::Poisson(libMesh::EquationSystems&, std::__cxx11::string)’:
+/nas/longleaf/home/masods/transmirall/src/Poisson.cpp:42:7: error: class ‘BeatIt::Poisson’ does not have any field named ‘M_datafile’
+     : M_datafile(),
+       ^~~~~~~~~~
+/nas/longleaf/home/masods/transmirall/src/Poisson.cpp: At global scope:
+/nas/longleaf/home/masods/transmirall/src/Poisson.cpp:58:36: error: ‘GetPot’ in namespace ‘libMesh’ does not name a type
+ void Poisson::setup(const libMesh::GetPot& data, std::string section) {
+                                    ^~~~~~
+/nas/longleaf/home/masods/transmirall/src/Poisson.cpp: In member function ‘void BeatIt::Poisson::setup(const int&, std::__cxx11::string)’:
+/nas/longleaf/home/masods/transmirall/src/Poisson.cpp:59:5: error: ‘M_datafile’ was not declared in this scope
+     M_datafile = data;
+     ^~~~~~~~~~
+/nas/longleaf/home/masods/transmirall/src/Poisson.cpp:59:5: note: suggested alternative: ‘MatScale’
+     M_datafile = data;
+     ^~~~~~~~~~
+     MatScale
+/nas/longleaf/home/masods/transmirall/src/Poisson.cpp:67:42: error: request for member ‘get’ in ‘data’, which is of non-class type ‘const int’
+         std::string blockIDs_list = data.get(section + "/blockIDs", "666");
+                                          ^~~
+make[2]: *** [CMakeFiles/transmural_solver.dir/build.make:107: CMakeFiles/transmural_solver.dir/src/Poisson.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:86: CMakeFiles/transmural_solver.dir/all] Error 2
+make: *** [Makefile:94: all] Error 2

@@ -1,0 +1,15 @@
+# Configuration for Poisson Solver
+
+# General settings
+poisson/output_folder = "Output"
+poisson/blockIDs = "666"  # Default value, update if specific subdomains are needed
+
+# Right-hand side (RHS) function (set to zero for Laplace equation)
+poisson/rhs = "0.0"
+
+# Diffusion coefficient (1.0 for Laplace)
+poisson/D = 1.0
+
+# Boundary conditions using sideset IDs
+poisson/bc_endocardium = "Dirichlet: flag=101, value=101"
+poisson/bc_epicardium = "Dirichlet: flag=102, value=102"

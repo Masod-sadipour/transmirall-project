@@ -1,0 +1,8 @@
+# Ignore external libraries
+external_libs/libmesh_install/
+external_libs/petsc_install/
+external_libs/eigen/
+input/fibers_separate_chordae_cap.e
+# Ignore large input files
+input/*.e
+external_libs/
