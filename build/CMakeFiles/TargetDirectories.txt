@@ -1,3 +1,0 @@
-/nas/longleaf/home/masods/transmirall/build/CMakeFiles/transmural_solver.dir
-/nas/longleaf/home/masods/transmirall/build/CMakeFiles/edit_cache.dir
-/nas/longleaf/home/masods/transmirall/build/CMakeFiles/rebuild_cache.dir

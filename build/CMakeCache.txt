@@ -263,69 +263,6 @@ TransmuralLaplaceSolver_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 TransmuralLaplaceSolver_SOURCE_DIR:STATIC=/nas/longleaf/home/masods/transmirall
 
-//Path to a library.
-pkgcfg_lib_LibMesh_X11:FILEPATH=/usr/lib64/libX11.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_blas:FILEPATH=/usr/lib64/libblas.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_dl:FILEPATH=/usr/lib64/libdl.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_gcc_s:FILEPATH=/usr/lib/gcc/x86_64-redhat-linux/8/libgcc_s.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_gfortran:FILEPATH=/usr/lib/gcc/x86_64-redhat-linux/8/libgfortran.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_glpk:FILEPATH=/usr/lib64/libglpk.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_hwloc:FILEPATH=/usr/lib64/libhwloc.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_lapack:FILEPATH=/usr/lib64/liblapack.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_m:FILEPATH=/usr/lib64/libm.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_mesh_opt:FILEPATH=/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib/libmesh_opt.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_mpi:FILEPATH=/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib/libmpi.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_mpicxx:FILEPATH=/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib/libmpicxx.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_mpifort:FILEPATH=/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib/libmpifort.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_netcdf:FILEPATH=/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib/libnetcdf.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_petsc:FILEPATH=/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib/libpetsc.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_pthread:FILEPATH=/usr/lib64/libpthread.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_quadmath:FILEPATH=/usr/lib/gcc/x86_64-redhat-linux/8/libquadmath.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_stdc++:FILEPATH=/usr/lib/gcc/x86_64-redhat-linux/8/libstdc++.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_timpi_opt:FILEPATH=/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib/libtimpi_opt.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_tirpc:FILEPATH=/usr/lib64/libtirpc.so
-
-//Path to a library.
-pkgcfg_lib_LibMesh_z:FILEPATH=/usr/lib64/libz.so
-
 
 ########################
 # INTERNAL cache entries
@@ -504,37 +441,27 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/include][cfound components: system filesystem iostreams regex ][v1.66.0(1.66)]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v1.4.2()]
-LibMesh_CFLAGS:INTERNAL=-DNDEBUG;-I/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include;-I/usr/include/eigen3;-pthread;-I/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/include;-I/usr/include/tirpc
+LibMesh_CFLAGS:INTERNAL=
 LibMesh_CFLAGS_I:INTERNAL=
-LibMesh_CFLAGS_OTHER:INTERNAL=-DNDEBUG;-pthread
-LibMesh_FOUND:INTERNAL=1
-LibMesh_INCLUDEDIR:INTERNAL=/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include
-LibMesh_INCLUDE_DIRS:INTERNAL=/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include;/usr/include/eigen3;/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/include;/usr/include/tirpc
-LibMesh_LDFLAGS:INTERNAL=-Wl,-rpath,/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib;-L/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib;-lmesh_opt;-ltimpi_opt;-Wl,-rpath,/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib;-L/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib;-L/usr/lib;-Wl,-rpath,/usr/lib/gcc/x86_64-redhat-linux/8;-L/usr/lib/gcc/x86_64-redhat-linux/8;-lglpk;-lz;-lpetsc;-llapack;-lblas;-lhwloc;-lX11;-lpthread;-lmpifort;-lgfortran;-lquadmath;-lmpicxx;-lstdc++;-lm;-lmpi;-lgcc_s;-ldl;-ltirpc;-lnetcdf
-LibMesh_LDFLAGS_OTHER:INTERNAL=-Wl,-rpath,/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib;-Wl,-rpath,/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib;-Wl,-rpath,/usr/lib/gcc/x86_64-redhat-linux/8
-LibMesh_LIBDIR:INTERNAL=/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib
-LibMesh_LIBRARIES:INTERNAL=mesh_opt;timpi_opt;glpk;z;petsc;lapack;blas;hwloc;X11;pthread;mpifort;gfortran;quadmath;mpicxx;stdc++;m;mpi;gcc_s;dl;tirpc;netcdf
-LibMesh_LIBRARY_DIRS:INTERNAL=/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib;/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib;/usr/lib;/usr/lib/gcc/x86_64-redhat-linux/8
+LibMesh_CFLAGS_OTHER:INTERNAL=
+LibMesh_FOUND:INTERNAL=
+LibMesh_INCLUDEDIR:INTERNAL=
+LibMesh_LIBDIR:INTERNAL=
 LibMesh_LIBS:INTERNAL=
 LibMesh_LIBS_L:INTERNAL=
 LibMesh_LIBS_OTHER:INTERNAL=
 LibMesh_LIBS_PATHS:INTERNAL=
-LibMesh_MODULE_NAME:INTERNAL=libmesh
-LibMesh_PREFIX:INTERNAL=/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install
-LibMesh_STATIC_CFLAGS:INTERNAL=-DNDEBUG;-I/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include;-I/usr/include/eigen3;-pthread;-I/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/include;-I/usr/include/tirpc
+LibMesh_MODULE_NAME:INTERNAL=
+LibMesh_PREFIX:INTERNAL=
+LibMesh_STATIC_CFLAGS:INTERNAL=
 LibMesh_STATIC_CFLAGS_I:INTERNAL=
-LibMesh_STATIC_CFLAGS_OTHER:INTERNAL=-DNDEBUG;-pthread
-LibMesh_STATIC_INCLUDE_DIRS:INTERNAL=/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/include;/usr/include/eigen3;/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/include;/usr/include/tirpc
-LibMesh_STATIC_LDFLAGS:INTERNAL=-Wl,-rpath,/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib;-L/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib;-lmesh_opt;-ltimpi_opt;-Wl,-rpath,/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib;-L/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib;-L/usr/lib;-Wl,-rpath,/usr/lib/gcc/x86_64-redhat-linux/8;-L/usr/lib/gcc/x86_64-redhat-linux/8;-lglpk;-lz;-lpetsc;-llapack;-lblas;-lhwloc;-lX11;-lpthread;-lmpifort;-lgfortran;-lquadmath;-lmpicxx;-lstdc++;-lm;-lmpi;-lgcc_s;-ldl;-ltirpc;-lnetcdf
-LibMesh_STATIC_LDFLAGS_OTHER:INTERNAL=-Wl,-rpath,/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib;-Wl,-rpath,/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib;-Wl,-rpath,/usr/lib/gcc/x86_64-redhat-linux/8
+LibMesh_STATIC_CFLAGS_OTHER:INTERNAL=
 LibMesh_STATIC_LIBDIR:INTERNAL=
-LibMesh_STATIC_LIBRARIES:INTERNAL=mesh_opt;timpi_opt;glpk;z;petsc;lapack;blas;hwloc;X11;pthread;mpifort;gfortran;quadmath;mpicxx;stdc++;m;mpi;gcc_s;dl;tirpc;netcdf
-LibMesh_STATIC_LIBRARY_DIRS:INTERNAL=/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib;/nas/longleaf/home/masods/transmirall/external_libs/petsc_install/lib;/usr/lib;/usr/lib/gcc/x86_64-redhat-linux/8
 LibMesh_STATIC_LIBS:INTERNAL=
 LibMesh_STATIC_LIBS_L:INTERNAL=
 LibMesh_STATIC_LIBS_OTHER:INTERNAL=
 LibMesh_STATIC_LIBS_PATHS:INTERNAL=
-LibMesh_VERSION:INTERNAL=1.6.2
+LibMesh_VERSION:INTERNAL=
 LibMesh_libmesh_INCLUDEDIR:INTERNAL=
 LibMesh_libmesh_LIBDIR:INTERNAL=
 LibMesh_libmesh_PREFIX:INTERNAL=
@@ -557,49 +484,4 @@ _Boost_NAMESPACE_LAST:INTERNAL=boost
 _Boost_USE_MULTITHREADED_LAST:INTERNAL=TRUE
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
-__pkg_config_arguments_LibMesh:INTERNAL=REQUIRED;IMPORTED_TARGET;libmesh
-__pkg_config_checked_LibMesh:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_X11
-pkgcfg_lib_LibMesh_X11-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_blas
-pkgcfg_lib_LibMesh_blas-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_dl
-pkgcfg_lib_LibMesh_dl-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_gcc_s
-pkgcfg_lib_LibMesh_gcc_s-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_gfortran
-pkgcfg_lib_LibMesh_gfortran-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_glpk
-pkgcfg_lib_LibMesh_glpk-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_hwloc
-pkgcfg_lib_LibMesh_hwloc-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_lapack
-pkgcfg_lib_LibMesh_lapack-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_m
-pkgcfg_lib_LibMesh_m-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_mesh_opt
-pkgcfg_lib_LibMesh_mesh_opt-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_mpi
-pkgcfg_lib_LibMesh_mpi-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_mpicxx
-pkgcfg_lib_LibMesh_mpicxx-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_mpifort
-pkgcfg_lib_LibMesh_mpifort-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_netcdf
-pkgcfg_lib_LibMesh_netcdf-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_petsc
-pkgcfg_lib_LibMesh_petsc-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_pthread
-pkgcfg_lib_LibMesh_pthread-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_quadmath
-pkgcfg_lib_LibMesh_quadmath-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_stdc++
-pkgcfg_lib_LibMesh_stdc++-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_timpi_opt
-pkgcfg_lib_LibMesh_timpi_opt-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_tirpc
-pkgcfg_lib_LibMesh_tirpc-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_LibMesh_z
-pkgcfg_lib_LibMesh_z-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/nas/longleaf/home/masods/transmirall/external_libs/libmesh_install/lib
 
